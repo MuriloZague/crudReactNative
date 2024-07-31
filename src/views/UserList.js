@@ -60,7 +60,7 @@ export default function UserList(props) {
         <View>
           <FlatList
             data={ state.users }
-            keyExtractor={ user => user.id.toString() }
+            keyExtractor={ user => user.id.toString("Usuario 0') }
             renderItem={ getUserItem }
           />
         </View>
